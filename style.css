@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(120deg, #2f3753, #345546);
+}
+
+.input-form,
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  margin: 3rem 0 0.5rem;
+  color: white;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+form input {
+  height: 2rem;
+  width: 15rem;
+}
+
+form button {
+  height: 2rem;
+  width: 3rem;
+  background: #494949;
+  border: none;
+}
