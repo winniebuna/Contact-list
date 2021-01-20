@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>CONTACT LIST</title>
-  </head>
-  <body>
-    <header>
-      <h1>MY CONTACT LIST</h1>
-    </header>
-    <div class="input-form">
-      <form>
-        <input class="form-input" type="text" />
-        <button class="form-btn"><i class="fas fa-plus-square"></i></button>
-      </form>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="contact-text">CONTACT LIST</h1>
+    <form action="#" class="contact-form">
+        <label for="username">Name:</label>
+        <input class="name-input" type="text" name="username">
+        <label for="number">Number:</label>
+        <input class="number-input" type="text" name="number">
+        <button class="add-btn">Add Contact</button>
+    </form>
+
     <div class="contact-list">
-      <ul class="contact-name"></ul>
+        <ul class="contact-item"></ul>
     </div>
 
-    <script src="./app.js"></script>
-  </body>
+
+    <script src="./index.js"></script>
+</body>
 </html>

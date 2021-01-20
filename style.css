@@ -5,34 +5,131 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(120deg, #2f3753, #345546);
+  font-family: sans-serif;
+  background-color: #202020;
 }
 
-.input-form,
-header {
+.contact-text {
+  color: rgb(90, 87, 87);
+  padding: 2rem;
+  font-size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header h1 {
-  margin: 3rem 0 0.5rem;
-  color: white;
-}
 
+/*styling the form*/
 form {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
-form input {
-  height: 2rem;
-  width: 15rem;
+label {
+  color: rgb(90, 87, 87);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-weight: bold;
+}
+input {
+  color: rgb(90, 87, 87);
+  background-color: rgba(24, 23, 23, 0.89);
+  border: none;
+  padding: 0 10px;
+  font-size: 15px;
+}
+.add-btn {
+  background-color: transparent;
+  color: rgb(90, 87, 87);
+  border: 1px solid rgb(90, 87, 87);
+  padding: 0.5rem 2.5rem;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background-color: rgba(24, 23, 23, 0.89);
+  padding: 0.5rem 2rem;
+  transition: 0.3s ease-in-out;
 }
 
-form button {
-  height: 2rem;
-  width: 3rem;
-  background: #494949;
+/*styling the List area*/
+.contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.contact-item {
+  min-width: 30%;
+  list-style: none;
+}
+
+.contact-div {
+  display: flex;
+}
+
+/*styling the LI*/
+.li-div {
+  margin: 0.5rem 0.1rem;
+  background: rgba(24, 23, 23, 0.89);
+  font-size: 15px;
+  border-radius: 0.5rem;
+  width: 30rem;
+}
+.li-div:hover {
+  transform: translateX(-5%);
+  transition: 0.5s ease-in-out;
+}
+.li-div li {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  color: rgb(90, 87, 87);
+}
+.contact-name {
+  margin-top: 0.5rem;
+  border-bottom: 1px solid rgb(49, 49, 48);
+}
+
+/*stylig the Buttons*/
+.btn-div {
+  padding: 1rem;
+  background-color: transparent;
+}
+.done-btn,
+.delete-btn {
+  padding: 0.5rem;
+  background-color: rgba(24, 23, 23, 0.89);
+  color: white;
+  margin: 2px 2px;
+  display: block;
   border: none;
+  width: 5rem;
+  color: rgb(90, 87, 87);
+}
+.done-btn:hover,
+.delete-btn:hover {
+  background-color: green;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  background-color: red;
+}
+.delete-btn {
+  border: 1px solid red;
+  margin-top: 0.5rem;
+}
+.done-btn {
+  border: 1px solid green;
+}
+
+.fall {
+  backdrop-filter: grayscale(blur);
+}
+
+.blur {
+  opacity: 0.5;
 }
